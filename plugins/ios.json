@@ -16,6 +16,9 @@
     "cordova-plugin-apprate": {
       "PACKAGE_NAME": "com.seattle.free"
     },
+    "cordova-plugin-consent": {
+      "PACKAGE_NAME": "com.seattle.free"
+    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.seattle.free"
     },
@@ -30,9 +33,6 @@
       "PACKAGE_NAME": "com.seattle.free"
     },
     "cordova-plugin-wkwebview-file-xhr": {
-      "PACKAGE_NAME": "com.seattle.free"
-    },
-    "cordova-plugin-consent": {
       "PACKAGE_NAME": "com.seattle.free"
     }
   },

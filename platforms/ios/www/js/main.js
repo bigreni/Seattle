@@ -73,11 +73,12 @@
 
    function checkFirstUse()
     {
-        loadRoutes();
+        //loadRoutes();
         $("span").remove();
         $(".dropList").select2();
+        checkConsent();
         initApp1();
-        checkPermissions();
+        //checkPermissions();
         //document.getElementById('screen').style.display = 'none';     
         askRating();
 
@@ -85,7 +86,7 @@
 
     function notFirstUse()
     {
-        loadRoutes();
+        //loadRoutes();
         $("span").remove();
         $(".dropList").select2();
         document.getElementById("screen").style.display = 'none';     
@@ -98,6 +99,30 @@ function loadFaves()
     window.location = "Favorites.html";
 }
 
+async function checkConsent(){
+    if (cordova.platformId === 'ios') {
+        const status = await consent.trackingAuthorizationStatus()
+        /*
+          trackingAuthorizationStatus:
+          0 = notDetermined
+          1 = restricted
+          2 = denied
+          3 = authorized
+        */
+        const statusNew = await consent.requestTrackingAuthorization()
+      }
+    
+      const consentStatus = await consent.getConsentStatus()
+      if (consentStatus === consent.ConsentStatus.Required) {
+        await consent.requestInfoUpdate()
+      }
+    
+      const formStatus = await consent.getFormStatus()
+      if (formStatus === consent.FormStatus.Available) {
+          const form = await consent.loadForm()
+          form.show()
+      }
+}
 
 
 function checkPermissions(){
@@ -160,7 +185,7 @@ function loadRoutes()
     $.ajax(
         {
             type: "GET",
-            url: "https://api.pugetsound.onebusaway.org/api/where/routes-for-agency/1.json?key=483eeac4-f72c-4e8f-b6f2-5de166ad166f",
+            url: "https://api.pugetsound.onebusaway.org/api/where/routes-for-agency/" + $("#agencySelect").val()  + ".json?key=483eeac4-f72c-4e8f-b6f2-5de166ad166f",
             //contentType: "application/json;	charset=utf-8",
             dataType: "json",
             success: function (msg) {
@@ -318,9 +343,9 @@ function initApp1()
     if (/(android)/i.test(navigator.userAgent)){
     interstitial = new admob.InterstitialAd({
         //dev
-        adUnitId: 'ca-app-pub-3940256099942544/1033173712'
+        //adUnitId: 'ca-app-pub-3940256099942544/1033173712'
         //prod
-        //adUnitId: 'ca-app-pub-9249695405712287/2979002693'
+        adUnitId: 'ca-app-pub-9249695405712287/9394686476'
       });
     }
     else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
@@ -328,7 +353,7 @@ function initApp1()
             //dev
             adUnitId: 'ca-app-pub-3940256099942544/4411468910'
             //prod
-            //adUnitId: 'ca-app-pub-9249695405712287/1011314907'
+            //adUnitId: 'ca-app-pub-9249695405712287/1324624766'
           });
     }
     registerAdEvents1();
