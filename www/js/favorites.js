@@ -40,7 +40,7 @@ function loadFaveArrivals(route, dir, stop, text)
     $.ajax(
         {
             type: "GET",
-            url: "https://www.rtd-denver.com/api/nextride/stops/" + stop,
+            url: "https://api.pugetsound.onebusaway.org/api/where/arrivals-and-departures-for-stop/" + stop + ".json?minutesBefore=0&key=483eeac4-f72c-4e8f-b6f2-5de166ad166f",
             //contentType: "application/json;	charset=utf-8",
             dataType: "json",
             success: function (output) {
@@ -51,22 +51,14 @@ function loadFaveArrivals(route, dir, stop, text)
               else {
                       results = results.concat("<p><strong>" + text + "</strong></p>");
                       results = results.concat('<table id="tblResults" cellpadding="0" cellspacing="0">')
-                      results = results.concat('<tr class="header"><th>ROUTE</th><th>ARRIVAL</th></tr><tr><td class="spacer" colspan="2"></td></tr>');
-                      var trips = (output.data.attributes.childStops) ? output.data.attributes.childStops[0].routePatterns : output.data.attributes.routePatterns;
+                      results = results.concat('<tr class="header"><th>ROUTE</th><th>DESTINATION</th><th>ARRIVAL</th></tr><tr><td class="spacer" colspan="3"></td></tr>');
+                      var trips = output.data.entry.arrivalsAndDepartures;
                      for(var i=0; i<trips.length;i++)
                      {
-                      if(trips[i].directionId==parseInt(dir))
-                      {
-                          var item = trips[i].tripStops;
-                          var maxlength = (item.length>2)? 3: item.length;
-                          for(var index=0; index<maxlength; index++)
-                          {
-                              var arrivalTime = (item[index].predicted_arrival_time && item[index].predicted_arrival_time!=null) ? Math.floor(((item[index].predicted_arrival_time) - Date.now()/1000)/60) : Math.floor(((item[index].scheduled_arrival_time) - Date.now()/1000)/60);
-                              results = results.concat('<tr class="predictions">');
-                              results = results.concat("<td>" + item[index].route_short_name + " - " + item[index].trip_headsign + "</td>"  + "<td>" + arrivalTime + " minutes</td>");
-                              results = results.concat('</tr><tr><td class="spacer" colspan="2"></td></tr>');         
-                          }
-                      }
+                        var arrivalTime = (trips[i].predicted) ? Math.round((trips[i].predictedArrivalTime - Date.now())/60000) : Math.round((trips[i].scheduledArrivalTime - Date.now())/60000);
+                        results = results.concat('<tr class="predictions">');
+                        results = results.concat("<td>" + trips[i].routeShortName + "</td><td>" + trips[i].tripHeadsign + "</td>"  + "<td>" + arrivalTime + " minutes</td>");
+                        results = results.concat('</tr><tr><td class="spacer" colspan="3"></td></tr>');   
                      }
                     results = results + "</table>";
                     }

@@ -132,8 +132,8 @@ function askRating()
   usesUntilPrompt: 10,
   promptAgainForEachNewVersion: true,
   storeAppURL: {
-                ios: '6444927077',
-                android: 'market://details?id=com.denver.free'
+                ios: '1660409176',
+                android: 'market://details?id=com.seattle.free'
                }
 });
  
@@ -156,7 +156,7 @@ function loadRoutes()
 {
     var list = $("#routeSelect");
     $(list).empty();
-    $(list).append($("<option disabled/>").val("0").text("- Select Route -"));
+    $(list).append($("<option disabled selected/>").val("0").text("- Select Route -"));
     $.ajax(
         {
             type: "GET",
@@ -169,7 +169,7 @@ function loadRoutes()
                 {
                     $(list).append($("<option />").val(routes[i].id).text(routes[i].shortName + " - " + routes[i].description));
                 }
-            $(list).removeAttr('disabled');
+            //$(list).removeAttr('disabled');
             $(list).val('0');
             },
             error: function () {
@@ -238,9 +238,7 @@ function processStops()
     var dirStops = routeStops.data.entry.stopGroupings[0].stopGroups.filter(function(item){
         return item.id == $("#routeDirectionSelect").val();
     });
-    alert(dirStops.length);
     var allRoutes = routeStops.data.references.stops.filter(item => dirStops[0].stopIds.includes(item.id));
-    alert(allRoutes.length);
     for(i=0; i<allRoutes.length; i++)
     {
         $(stopList).append($("<option />").val(allRoutes[i].id).text(allRoutes[i].name));
@@ -269,22 +267,15 @@ var outputContainer = $('.js-next-bus-results');
                 else {
                         results = results.concat("<p><strong>" + $("#routeSelect option:selected").text()  + " - " + $("#routeDirectionSelect option:selected").text() + " - " + $("#routeStopSelect option:selected").text() + "</strong></p>");
                         results = results.concat('<table id="tblResults" cellpadding="0" cellspacing="0">')
-                        results = results.concat('<tr class="header"><th>ROUTE</th><th>ARRIVAL</th></tr><tr><td class="spacer" colspan="2"></td></tr>');
-                        var trips = (output.data.attributes.childStops) ? output.data.attributes.childStops[0].routePatterns : output.data.attributes.routePatterns;
+                        results = results.concat('<tr class="header"><th>ROUTE</th><th>DESTINATION</th><th>ARRIVAL</th></tr><tr><td class="spacer" colspan="3"></td></tr>');
+                        var trips = output.data.entry.arrivalsAndDepartures;
                        for(var i=0; i<trips.length;i++)
                        {
-                        if(trips[i].directionId==parseInt($("#routeDirectionSelect").val()))
-                        {
-                            var item = trips[i].tripStops;
-                            var maxlength = (item.length>2)? 3: item.length;
-                            for(var index=0; index<maxlength; index++)
-                            {
-                                var arrivalTime = (item[index].predicted_arrival_time && item[index].predicted_arrival_time!=null) ? Math.floor(((item[index].predicted_arrival_time) - Date.now()/1000)/60) : Math.floor(((item[index].scheduled_arrival_time) - Date.now()/1000)/60);
+
+                                var arrivalTime = (trips[i].predicted) ? Math.round((trips[i].predictedArrivalTime - Date.now())/60000) : Math.round((trips[i].scheduledArrivalTime - Date.now())/60000);
                                 results = results.concat('<tr class="predictions">');
-                                results = results.concat("<td>" + item[index].route_short_name + " - " + item[index].trip_headsign + "</td>"  + "<td>" + arrivalTime + " minutes</td>");
-                                results = results.concat('</tr><tr><td class="spacer" colspan="2"></td></tr>');         
-                            }
-                        }
+                                results = results.concat("<td>" + trips[i].routeShortName + "</td><td>" + trips[i].tripHeadsign + "</td>"  + "<td>" + arrivalTime + " minutes</td>");
+                                results = results.concat('</tr><tr><td class="spacer" colspan="3"></td></tr>');         
                        }
                       results = results + "</table>";
                       }

@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-apprate","cordova-plugin-dialogs","cordova-plugin-nativestorage","cordova-plugin-device","cordova-plugin-wkwebview-file-xhr","cordova-plugin-idfa","cordova-support-android-plugin","cordova-plugin-inappbrowser","cordova-plugin-geolocation","admob-plus-cordova"]}
