@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript">
+  var cachebuster = Math.round(new Date().getTime() / 1000);
+  // document.write('<link rel="stylesheet" type="text/css" href="css/index.css?cb=' +cachebuster+'"></li' + 'nk>');
+  document.write('<link rel="stylesheet" type="text/css" href="https://s3.us-east-2.amazonaws.com/bigreni.com/css/houston/index.css?cb=' +cachebuster+'"></li' + 'nk>');
+</script>
+<!-- Include jQuery Mobile stylesheets -->
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
+<!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+<link href="css/select2.min.css" rel="stylesheet" />
+<script src="js/select2.min.js"></script>
+<title>METRO Arrivals</title>
+<style>
+  /* Hide all the app pages until jQuery Mobile inits to
+     avoid the Flash of Unstyled Content */
+  .splashscreen {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index:1001;
+      background: url(https://s3.us-east-2.amazonaws.com/bigreni.com/img/status.gif) no-repeat center center;
+      text-shadow: none;
+      color: black;
+  }
+</style>
+</head>
+<body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+      // document.write('<script type="text/javascript" src="https://s3.us-east-2.amazonaws.com/bigreni.com/js/houston/main.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+     document.write('<script type="text/javascript" src="js/main.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+ </script>	
+    <div id="screen" class="splashscreen" style="display: none"></div>
+        <script>
+            // Show the splash screen with a loading message
+            // Handler to hide the message when the loading stops
+            window.onload = function () {
+                onLoad();
+                //document.getElementById("screen").style.display = 'none';
+            };
+            //document.getElementById("screen").innerHTML = 'Loading...';
+            document.getElementById("screen").style.display = 'block';
+        </script> 
+    <div id="fullpage" data-role="page">
+		<div id="contentBox" class="box">
+                 <h3>METRO Arrivals</h3>
+            <br>
+            <div style="margin: 0 1vw 0 1vw;">
+          <!-- <div>
+              <label for="allRoutes">Show all routes for the stop:</label>
+                  <label class="switch">
+                    <input id="allRoutes" type="checkbox">
+                    <div class="slider round"></div>
+                  </label>                
+          </div>     -->
+ 					<div>
+						<label for="route">Route:</label>
+						    <select name="routeNumber" id="routeSelect" class="dropList" onchange="loadDirections();">
+                                <option value="" disabled="disabled" selected="selected">Select A Route</option>
+                                <option value="0">0</option>
+                                <option value="0L">0L</option>
+                                <option value="1">1</option>
+                                <option value="3">3</option>
+                                <option value="3L">3L</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="15L">15L</option>
+                                <option value="16">16</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="24">24</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="40">40</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="51">51</option>
+                                <option value="52">52</option>
+                                <option value="59">59</option>
+                                <option value="65">65</option>
+                                <option value="66">66</option>
+                                <option value="72">72</option>
+                                <option value="73">73</option>
+                                <option value="76">76</option>
+                                <option value="83D">83D</option>
+                                <option value="83L">83L</option>
+                                <option value="88">88</option>
+                                <option value="88L">88L</option>
+                                <option value="92">92</option>
+                                <option value="93L">93L</option>
+                                <option value="99">99</option>
+                                <option value="100">100</option>
+                                <option value="104L">104L</option>
+                                <option value="105">105</option>
+                                <option value="112">112</option>
+                                <option value="116X">116X</option>
+                                <option value="120E">120E</option>
+                                <option value="120L">120L</option>
+                                <option value="120W">120W</option>
+                                <option value="120X">120X</option>
+                                <option value="121">121</option>
+                                <option value="130">130</option>
+                                <option value="133">133</option>
+                                <option value="135">135</option>
+                                <option value="139">139</option>
+                                <option value="145X">145X</option>
+                                <option value="153">153</option>
+                                <option value="169">169</option>
+                                <option value="169L">169L</option>
+                                <option value="204">204</option>
+                                <option value="205">205</option>
+                                <option value="206">206</option>
+                                <option value="208">208</option>
+                                <option value="225">225</option>
+                                <option value="225D">225D</option>
+                                <option value="225T">225T</option>
+                                <option value="228">228</option>
+                                <option value="323">323</option>
+                                <option value="324">324</option>
+                                <option value="326">326</option>
+                                <option value="327">327</option>
+                                <option value="402L">402L</option>
+                                <option value="483">483</option>
+                                <option value="520">520</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="G">G</option>
+                                <option value="H">H</option>
+                                <option value="L">L</option>
+                                <option value="N">N</option>
+                                <option value="P">P</option>
+                                <option value="R">R</option>
+                                <option value="W">W</option>
+                                <option value="AB1">AB1</option>
+                                <option value="AT">AT</option>
+                                <option value="ATA">ATA</option>
+                                <option value="BOLT">BOLT</option>
+                                <option value="BOUND">BOUND</option>
+                                <option value="CV">CV</option>
+                                <option value="DASH">DASH</option>
+                                <option value="ENWDTROLLEY">ENWDTROLLEY</option>
+                                <option value="EV">EV</option>
+                                <option value="FF1">FF1</option>
+                                <option value="FF3">FF3</option>
+                                <option value="FF5">FF5</option>
+                                <option value="JUMP">JUMP</option>
+                                <option value="LD1">LD1</option>
+                                <option value="LD3">LD3</option>
+                                <option value="MALLRIDE">MALLRIDE</option>
+                                <option value="NB1">NB1</option>
+                                <option value="NB2">NB2</option>
+                                <option value="RX">RX</option>
+                                <option value="SKIP">SKIP</option>
+                            </select>
+               		</div>
+				
+					<div>
+						<label for="stopSelect">Direction:</label>
+    		            <select class="dropList" id="routeDirectionSelect" name="direction" disabled="disabled" onchange="loadStops();">
+    			            <option value="0">- Select Direction -</option>
+                    	</select>
+					</div>
+                	<div>
+                        <label for="stopSelect">Stop:</label>
+    		            <select name="stopID" id="routeStopSelect" class="dropList" disabled="disabled" onchange="loadArrivals();">
+    			            <option value="0">- Select Stop -</option>
+                    	</select>
+    	            </div>
+                    <h2 style="text-align:center;">
+                        <button onclick="saveFavorites();" id="btnSave" style="border:none; background-color: lightgreen; color:black;visibility: hidden;">&#x2764; Add to favorites</button>
+                    </h2>
+                    <label id="message" style="font-size: large;"></label> 
+                  <div class="js-next-bus-results" style="display:none; text-align: center;">
+                 </div>
+        </div>
+</div>
+
+</div>
+
+<div id="footer">
+  <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+  <div class="row" id="bottomNav">
+    <div class="col-xs-6 text-center"><a href="index.html"><i class="glyphicon glyphicon-time"></i><br>Arrivals</a></div>
+    <div class="col-xs-6 text-center"><a href="javascript:loadFaves();"><i class="glyphicon glyphicon glyphicon-star-empty"></i><br>Favorites</a></div>
+  </div>
+  </div>
+</div>
+
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
