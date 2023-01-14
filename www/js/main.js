@@ -73,7 +73,7 @@
 
    function checkFirstUse()
     {
-        loadRoutes();
+        //loadRoutes();
         $("span").remove();
         $(".dropList").select2();
         initApp1();
@@ -85,7 +85,7 @@
 
     function notFirstUse()
     {
-        loadRoutes();
+        //loadRoutes();
         $("span").remove();
         $(".dropList").select2();
         document.getElementById("screen").style.display = 'none';     
@@ -160,7 +160,7 @@ function loadRoutes()
     $.ajax(
         {
             type: "GET",
-            url: "https://api.pugetsound.onebusaway.org/api/where/routes-for-agency/1.json?key=483eeac4-f72c-4e8f-b6f2-5de166ad166f",
+            url: "https://api.pugetsound.onebusaway.org/api/where/routes-for-agency/" + $("#agencySelect").val()  + ".json?key=483eeac4-f72c-4e8f-b6f2-5de166ad166f",
             //contentType: "application/json;	charset=utf-8",
             dataType: "json",
             success: function (msg) {
@@ -320,7 +320,7 @@ function initApp1()
         //dev
         adUnitId: 'ca-app-pub-3940256099942544/1033173712'
         //prod
-        //adUnitId: 'ca-app-pub-9249695405712287/2979002693'
+        //adUnitId: 'ca-app-pub-9249695405712287/9394686476'
       });
     }
     else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
@@ -328,7 +328,7 @@ function initApp1()
             //dev
             adUnitId: 'ca-app-pub-3940256099942544/4411468910'
             //prod
-            //adUnitId: 'ca-app-pub-9249695405712287/1011314907'
+            //adUnitId: 'ca-app-pub-9249695405712287/1324624766'
           });
     }
     registerAdEvents1();
