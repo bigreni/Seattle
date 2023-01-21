@@ -318,9 +318,9 @@ function initApp1()
     if (/(android)/i.test(navigator.userAgent)){
     interstitial = new admob.InterstitialAd({
         //dev
-        adUnitId: 'ca-app-pub-3940256099942544/1033173712'
+        //adUnitId: 'ca-app-pub-3940256099942544/1033173712'
         //prod
-        //adUnitId: 'ca-app-pub-9249695405712287/9394686476'
+        adUnitId: 'ca-app-pub-9249695405712287/9394686476'
       });
     }
     else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
