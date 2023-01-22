@@ -84,4 +84,7 @@
     <feature name="AdMob">
         <param name="android-package" value="admob.plus.cordova.AdMob" />
     </feature>
+    <feature name="Consent">
+        <param name="android-package" value="cordova.plugin.consent.Consent" />
+    </feature>
 </widget>

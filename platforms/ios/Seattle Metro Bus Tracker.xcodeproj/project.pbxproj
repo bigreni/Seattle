@@ -44,6 +44,9 @@
 		904FC90B3C1D41598392F070 /* CDVWKInAppBrowserUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 377B459C6475454BA223238A /* CDVWKInAppBrowserUIDelegate.m */; };
 		581720BADB8542F3BF7AD3AF /* CDVWKWebViewFileXhr.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A31799FC2A40C986596256 /* CDVWKWebViewFileXhr.m */; };
 		1F11AC70502949F2BEDF4BC4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31710182B18341B7B65EBA00 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		72D5EA35994E4BDEAC75CEE1 /* CSNConsent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD8A12CDB0C45E2B2A84F60 /* CSNConsent.swift */; };
+		62BCA5544F4644AFA0590CBB /* CSNContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A008EE19B843FC870AF525 /* CSNContext.swift */; };
+		4255E4D3156C4263B443C6BF /* CSNGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A7E30239B24D7086F9CB58 /* CSNGenerated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +137,9 @@
 		65A31799FC2A40C986596256 /* CDVWKWebViewFileXhr.m */ = {isa = PBXFileReference; name = "CDVWKWebViewFileXhr.m"; path = "cordova-plugin-wkwebview-file-xhr/CDVWKWebViewFileXhr.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		6098006B2D524517B53DBFD0 /* CDVWKWebViewFileXhr.h */ = {isa = PBXFileReference; name = "CDVWKWebViewFileXhr.h"; path = "cordova-plugin-wkwebview-file-xhr/CDVWKWebViewFileXhr.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		31710182B18341B7B65EBA00 /* WebKit.framework */ = {isa = PBXFileReference; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		DFD8A12CDB0C45E2B2A84F60 /* CSNConsent.swift */ = {isa = PBXFileReference; name = "CSNConsent.swift"; path = "cordova-plugin-consent/CSNConsent.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		D2A008EE19B843FC870AF525 /* CSNContext.swift */ = {isa = PBXFileReference; name = "CSNContext.swift"; path = "cordova-plugin-consent/CSNContext.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		F4A7E30239B24D7086F9CB58 /* CSNGenerated.swift */ = {isa = PBXFileReference; name = "CSNGenerated.swift"; path = "cordova-plugin-consent/CSNGenerated.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +293,9 @@
 				7E4233EC60914A77A20D7181 /* CDVWKInAppBrowserUIDelegate.h */,
 				65A31799FC2A40C986596256 /* CDVWKWebViewFileXhr.m */,
 				6098006B2D524517B53DBFD0 /* CDVWKWebViewFileXhr.h */,
+				DFD8A12CDB0C45E2B2A84F60 /* CSNConsent.swift */,
+				D2A008EE19B843FC870AF525 /* CSNContext.swift */,
+				F4A7E30239B24D7086F9CB58 /* CSNGenerated.swift */,
 			);
 			name = Plugins;
 			path = "Seattle Metro Bus Tracker/Plugins";
@@ -490,6 +499,9 @@
 				32D72AAEA995463293D7C52D /* CDVWKInAppBrowser.m in Sources */,
 				904FC90B3C1D41598392F070 /* CDVWKInAppBrowserUIDelegate.m in Sources */,
 				581720BADB8542F3BF7AD3AF /* CDVWKWebViewFileXhr.m in Sources */,
+				72D5EA35994E4BDEAC75CEE1 /* CSNConsent.swift in Sources */,
+				62BCA5544F4644AFA0590CBB /* CSNContext.swift in Sources */,
+				4255E4D3156C4263B443C6BF /* CSNGenerated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

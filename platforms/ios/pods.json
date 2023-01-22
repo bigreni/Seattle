@@ -2,19 +2,24 @@
     "declarations": {
         "use_frameworks!": {
             "declaration": "use_frameworks!",
-            "count": 1
+            "count": 2
         }
     },
     "sources": {
         "https://cdn.cocoapods.org/": {
             "source": "https://cdn.cocoapods.org/",
-            "count": 1
+            "count": 2
         }
     },
     "libraries": {
         "Google-Mobile-Ads-SDK": {
             "name": "Google-Mobile-Ads-SDK",
             "spec": "~> 8.13.0",
+            "count": 1
+        },
+        "GoogleUserMessagingPlatform": {
+            "name": "GoogleUserMessagingPlatform",
+            "spec": "~> 2.0.0",
             "count": 1
         }
     }

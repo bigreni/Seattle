@@ -76,8 +76,9 @@
         //loadRoutes();
         $("span").remove();
         $(".dropList").select2();
+        checkConsent();
         initApp1();
-        checkPermissions();
+        //checkPermissions();
         //document.getElementById('screen').style.display = 'none';     
         askRating();
 
@@ -98,6 +99,30 @@ function loadFaves()
     window.location = "Favorites.html";
 }
 
+async function checkConsent(){
+    if (cordova.platformId === 'ios') {
+        const status = await consent.trackingAuthorizationStatus()
+        /*
+          trackingAuthorizationStatus:
+          0 = notDetermined
+          1 = restricted
+          2 = denied
+          3 = authorized
+        */
+        const statusNew = await consent.requestTrackingAuthorization()
+      }
+    
+      const consentStatus = await consent.getConsentStatus()
+      if (consentStatus === consent.ConsentStatus.Required) {
+        await consent.requestInfoUpdate()
+      }
+    
+      const formStatus = await consent.getFormStatus()
+      if (formStatus === consent.FormStatus.Available) {
+          const form = await consent.loadForm()
+          form.show()
+      }
+}
 
 
 function checkPermissions(){

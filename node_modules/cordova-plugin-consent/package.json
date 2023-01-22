@@ -1,0 +1,52 @@
+{
+  "name": "cordova-plugin-consent",
+  "version": "2.4.0",
+  "description": "Google Consent SDK Cordova Plugin",
+  "main": "./lib/index.js",
+  "typings": "./esm/index.d.ts",
+  "module": "./esm/index.js",
+  "scripts": {
+    "prepublishOnly": "nx build cordova-consent",
+    "version": "npx cordova-plus plugin version",
+    "build": "cordova-plus plugin build --input=./src/www/consent.ts --lib --esm",
+    "test": "cordova-plus plugin test"
+  },
+  "devDependencies": {
+    "@types/cordova": "^0.0.34",
+    "@types/node": "^18.7.3",
+    "cordova": "^11.0.0",
+    "cordova-plus": "^0.7.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~4.7.4"
+  },
+  "author": "Ratson",
+  "license": "MIT",
+  "repository": "admob-plus/admob-plus",
+  "homepage": "https://admob-plus.github.io/docs/cordova/consent",
+  "funding": "https://admob-plus.github.io/funding",
+  "files": [
+    "*.json",
+    "*.md",
+    "*.xml",
+    "esm",
+    "lib",
+    "src",
+    "www"
+  ],
+  "keywords": [
+    "cordova",
+    "plugin",
+    "google",
+    "consent",
+    "ecosystem:cordova",
+    "typescript"
+  ],
+  "cordova": {
+    "id": "cordova-plugin-consent",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "gitHead": "e83e5c31c05dfbc06f001839ea5f1a4072325701"
+}

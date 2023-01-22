@@ -31,6 +31,9 @@
     },
     "cordova-plugin-wkwebview-file-xhr": {
       "PACKAGE_NAME": "com.seattle.free"
+    },
+    "cordova-plugin-consent": {
+      "PACKAGE_NAME": "com.seattle.free"
     }
   },
   "dependent_plugins": {

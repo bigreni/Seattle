@@ -100,6 +100,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "admob"
       ]
+    },
+    {
+      "id": "cordova-plugin-consent.Consent",
+      "file": "plugins/cordova-plugin-consent/www/consent.js",
+      "pluginId": "cordova-plugin-consent",
+      "clobbers": [
+        "consent"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -112,6 +120,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-idfa": "2.1.0",
     "cordova-plugin-inappbrowser": "5.0.0",
     "cordova-plugin-geolocation": "4.1.0",
-    "admob-plus-cordova": "1.28.0"
+    "admob-plus-cordova": "1.28.0",
+    "cordova-plugin-consent": "2.4.0"
   };
 });
