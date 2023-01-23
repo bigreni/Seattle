@@ -37,6 +37,9 @@
     <feature name="AppRate">
         <param name="ios-package" value="CDVAppRate" />
     </feature>
+    <feature name="Consent">
+        <param name="ios-package" value="CSNConsent" />
+    </feature>
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
@@ -135,7 +138,4 @@
     <preference name="AndroidInsecureFileModeEnabled" value="true" />
     <preference name="InterceptRemoteRequests" value="all" />
     <preference name="SwiftVersion" value="5.3" />
-    <feature name="Consent">
-        <param name="ios-package" value="CSNConsent" />
-    </feature>
 </widget>
