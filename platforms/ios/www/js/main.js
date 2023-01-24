@@ -76,9 +76,9 @@
         //loadRoutes();
         $("span").remove();
         $(".dropList").select2();
-        checkConsent();
+        //checkConsent();
         initApp1();
-        //checkPermissions();
+        checkPermissions();
         //document.getElementById('screen').style.display = 'none';     
         askRating();
 
@@ -351,9 +351,9 @@ function initApp1()
     else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
         interstitial = new admob.InterstitialAd({
             //dev
-            adUnitId: 'ca-app-pub-3940256099942544/4411468910'
+            //adUnitId: 'ca-app-pub-3940256099942544/4411468910'
             //prod
-            //adUnitId: 'ca-app-pub-9249695405712287/1324624766'
+            adUnitId: 'ca-app-pub-9249695405712287/1324624766'
           });
     }
     registerAdEvents1();
