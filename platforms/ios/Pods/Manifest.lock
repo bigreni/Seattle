@@ -49,7 +49,6 @@ PODS:
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK (~> 8.13.0)
-  - GoogleUserMessagingPlatform (~> 2.0.0)
 
 SPEC REPOS:
   trunk:
@@ -68,6 +67,6 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
 
-PODFILE CHECKSUM: 41632cae61cb9af7c64d2a13febdb76a0f42cbac
+PODFILE CHECKSUM: fa7baa0b564e90341e96325fa8674d255b886d4b
 
 COCOAPODS: 1.11.3
