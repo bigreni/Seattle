@@ -33,9 +33,6 @@
 		5A0AB5339BF542A28A2F0FFB /* NativeStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF16BCC72F44C4BA182894 /* NativeStorage.m */; };
 		F39EBDFF92944ED58820F891 /* CDVAppRate.m in Sources */ = {isa = PBXBuildFile; fileRef = A72F82AC959F4076BDAF97FB /* CDVAppRate.m */; };
 		69C9718A8C4543E4B625D9B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93CE9D4004C49AD804D2FB2 /* StoreKit.framework */; };
-		862C03E9D1094BC285DAAC97 /* CSNConsent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B37CB56F7A84B5B8DC83887 /* CSNConsent.swift */; };
-		FA839D3B3BAA4445A585DBB5 /* CSNContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D702D24EF2044E5918986C1 /* CSNContext.swift */; };
-		3F4CDAD450AD4820BFD1790E /* CSNGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554ACA9B035A42C983390F00 /* CSNGenerated.swift */; };
 		B862766BCE174D5A90C562E0 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6096271DAB4E40B0C4658F /* CDVDevice.m */; };
 		F78ADDEB485345B2AA327015 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B2804872EAE646EEAD922E1A /* CDVLocation.m */; };
 		4A94CDEE05D24D62BF9D764A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726FB43AC3C14B3BA90DE622 /* CoreLocation.framework */; };
@@ -118,9 +115,6 @@
 		A72F82AC959F4076BDAF97FB /* CDVAppRate.m */ = {isa = PBXFileReference; name = "CDVAppRate.m"; path = "cordova-plugin-apprate/CDVAppRate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		81D2E47CDD924CD5B3624494 /* CDVAppRate.h */ = {isa = PBXFileReference; name = "CDVAppRate.h"; path = "cordova-plugin-apprate/CDVAppRate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		B93CE9D4004C49AD804D2FB2 /* StoreKit.framework */ = {isa = PBXFileReference; name = "StoreKit.framework"; path = "System/Library/Frameworks/StoreKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		0B37CB56F7A84B5B8DC83887 /* CSNConsent.swift */ = {isa = PBXFileReference; name = "CSNConsent.swift"; path = "cordova-plugin-consent/CSNConsent.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
-		7D702D24EF2044E5918986C1 /* CSNContext.swift */ = {isa = PBXFileReference; name = "CSNContext.swift"; path = "cordova-plugin-consent/CSNContext.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
-		554ACA9B035A42C983390F00 /* CSNGenerated.swift */ = {isa = PBXFileReference; name = "CSNGenerated.swift"; path = "cordova-plugin-consent/CSNGenerated.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 		EF6096271DAB4E40B0C4658F /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		3DE36F9AA33B4E4D9868ADAA /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		B2804872EAE646EEAD922E1A /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
@@ -277,9 +271,6 @@
 				6FC2AE6A28E54FAB8F6A207B /* NativeStorage.h */,
 				A72F82AC959F4076BDAF97FB /* CDVAppRate.m */,
 				81D2E47CDD924CD5B3624494 /* CDVAppRate.h */,
-				0B37CB56F7A84B5B8DC83887 /* CSNConsent.swift */,
-				7D702D24EF2044E5918986C1 /* CSNContext.swift */,
-				554ACA9B035A42C983390F00 /* CSNGenerated.swift */,
 				EF6096271DAB4E40B0C4658F /* CDVDevice.m */,
 				3DE36F9AA33B4E4D9868ADAA /* CDVDevice.h */,
 				B2804872EAE646EEAD922E1A /* CDVLocation.m */,
@@ -491,9 +482,6 @@
 				E8F83C5459964C959B805306 /* CDVNotification.m in Sources */,
 				5A0AB5339BF542A28A2F0FFB /* NativeStorage.m in Sources */,
 				F39EBDFF92944ED58820F891 /* CDVAppRate.m in Sources */,
-				862C03E9D1094BC285DAAC97 /* CSNConsent.swift in Sources */,
-				FA839D3B3BAA4445A585DBB5 /* CSNContext.swift in Sources */,
-				3F4CDAD450AD4820BFD1790E /* CSNGenerated.swift in Sources */,
 				B862766BCE174D5A90C562E0 /* CDVDevice.m in Sources */,
 				F78ADDEB485345B2AA327015 /* CDVLocation.m in Sources */,
 				5230F1273A1945FEB9A725A0 /* IdfaPlugin.m in Sources */,

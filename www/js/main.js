@@ -1,7 +1,7 @@
     var interstitial;
     
     function onLoad() {
-        if ((/(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent))) {
+        if ((/(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent)) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
             document.addEventListener('deviceready', checkFirstUse, false);
         } else {
             notFirstUse();
@@ -348,7 +348,7 @@ function initApp1()
         adUnitId: 'ca-app-pub-9249695405712287/9394686476'
       });
     }
-    else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+    else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
         interstitial = new admob.InterstitialAd({
             //dev
             adUnitId: 'ca-app-pub-3940256099942544/4411468910'
@@ -379,7 +379,7 @@ function registerAdEvents1() {
 function showAd1()
 {
     document.getElementById("screen").style.display = 'block';     
-    if ((/(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent))) {
+    if ((/(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent)) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
         interstitial.show();
     }
     document.getElementById("screen").style.display = 'none'; 

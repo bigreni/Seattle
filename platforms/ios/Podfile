@@ -2,8 +2,7 @@
 source 'https://cdn.cocoapods.org/'
 platform :ios, '11.0'
 use_frameworks!
-target 'Seattle Metro Bus Tracker' do
-	project 'Seattle Metro Bus Tracker.xcodeproj'
+target 'C:\Users\naiar\Documents\GitHub\Seattle\platforms\ios\Seattle Metro Bus Tracker' do
+	project 'C:\Users\naiar\Documents\GitHub\Seattle\platforms\ios\Seattle Metro Bus Tracker.xcodeproj'
 	pod 'Google-Mobile-Ads-SDK', '~> 8.13.0'
-	pod 'GoogleUserMessagingPlatform', '~> 2.0.0'
 end

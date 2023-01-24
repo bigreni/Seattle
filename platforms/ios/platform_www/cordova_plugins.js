@@ -56,14 +56,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "runs": true
     },
     {
-      "id": "cordova-plugin-consent.Consent",
-      "file": "plugins/cordova-plugin-consent/www/consent.js",
-      "pluginId": "cordova-plugin-consent",
-      "clobbers": [
-        "consent"
-      ]
-    },
-    {
       "id": "cordova-plugin-device.device",
       "file": "plugins/cordova-plugin-device/www/device.js",
       "pluginId": "cordova-plugin-device",
@@ -149,7 +141,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-dialogs": "2.0.2",
     "cordova-plugin-nativestorage": "2.3.2",
     "cordova-plugin-apprate": "1.7.2",
-    "cordova-plugin-consent": "2.4.0",
     "cordova-plugin-device": "2.1.0",
     "cordova-plugin-geolocation": "4.1.0",
     "cordova-plugin-idfa": "2.1.0",

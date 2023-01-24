@@ -16,9 +16,6 @@
     "cordova-plugin-apprate": {
       "PACKAGE_NAME": "com.seattle.free"
     },
-    "cordova-plugin-consent": {
-      "PACKAGE_NAME": "com.seattle.free"
-    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.seattle.free"
     },
