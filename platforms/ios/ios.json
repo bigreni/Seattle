@@ -21,7 +21,7 @@
               "count": 1
             },
             {
-              "xml": "<string>Used to remember and personalize your experience</string>",
+              "xml": "<string>Your data will be used to show you personalized ads.</string>",
               "count": 1,
               "mode": "merge",
               "id": "config.xml"

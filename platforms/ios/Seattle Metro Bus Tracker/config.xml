@@ -85,7 +85,7 @@
         <string>Need location access to find things nearby</string>
     </edit-config>
     <edit-config file="*-Info.plist" mode="merge" target="NSUserTrackingUsageDescription">
-        <string>Used to remember and personalize your experience</string>
+        <string>Your data will be used to show you personalized ads.</string>
     </edit-config>
     <preference default="ca-app-pub-9249695405712287~4315421551" name="ADMOB_IOS_APP_ID" />
     <allow-intent href="itms:*" />
