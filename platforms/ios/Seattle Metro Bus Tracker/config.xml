@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.seattle.free" version="1.0" versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.seattle.free" version="2.0" versionCode="2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="CDVWebViewEngine">
         <param name="ios-package" value="CDVWebViewEngine" />
     </feature>
@@ -25,6 +25,39 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="AdMob">
+        <param name="ios-package" value="AMBPlugin" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="NativeStorage">
+        <param name="ios-package" value="NativeStorage" />
+    </feature>
+    <feature name="AppRate">
+        <param name="ios-package" value="CDVAppRate" />
+    </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
+    <feature name="Idfa">
+        <param name="ios-package" value="IdfaPlugin" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVWKInAppBrowser" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="InAppPurchase">
+        <param name="ios-package" value="InAppPurchase" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CDVWKWebViewFileXhr">
+        <param name="ios-package" value="CDVWKWebViewFileXhr" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Seattle Metro Bus Tracker</name>
     <description>
         Bus App.
@@ -41,6 +74,7 @@
     <cdv:plugin name="cordova-plugin-apprate" source="npm" />
     <cdv:plugin name="cordova-plugin-idfa" source="npm" />
     <cdv:plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <cdv:plugin name="cordova-plugin-purchase" source="npm" />
     <allow-navigation href="http://*/*" />
     <allow-navigation href="https://*/*" />
     <allow-navigation href="data:*" />
@@ -73,19 +107,14 @@
     <icon height="100" src="res/icon/ios/Icon100.png" width="100" />
     <icon height="167" src="res/icon/ios/Icon167.png" width="167" />
     <preference name="AllowInlineMediaPlayback" value="false" />
-    <preference name="BackupWebStorage" value="cloud" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="EnableViewportScale" value="false" />
-    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="MediaTypesRequiringUserActionForPlayback" value="none" />
     <preference name="SuppressesIncrementalRendering" value="false" />
     <preference name="SuppressesLongPressGesture" value="false" />
     <preference name="Suppresses3DTouchGesture" value="false" />
-    <preference name="GapBetweenPages" value="0" />
-    <preference name="PageLength" value="0" />
-    <preference name="PaginationBreakingMode" value="page" />
-    <preference name="PaginationMode" value="unpaginated" />
     <preference name="android-build-tool" value="gradle" />
+    <preference name="GradlePluginKotlinEnabled" value="true" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
@@ -99,44 +128,12 @@
     <preference name="SplashScreenDelay" value="1" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="24" />
-    <preference name="android-targetSdkVersion" value="32" />
+    <preference name="android-minSdkVersion" value="30" />
+    <preference name="android-targetSdkVersion" value="34" />
     <preference name="android-installLocation" value="auto" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="AndroidInsecureFileModeEnabled" value="true" />
     <preference name="InterceptRemoteRequests" value="all" />
     <preference name="SwiftVersion" value="5.3" />
-    <feature name="CDVWKWebViewFileXhr">
-        <param name="ios-package" value="CDVWKWebViewFileXhr" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="Geolocation">
-        <param name="ios-package" value="CDVLocation" />
-    </feature>
-    <feature name="Device">
-        <param name="ios-package" value="CDVDevice" />
-    </feature>
-    <feature name="InAppPurchase">
-        <param name="ios-package" value="InAppPurchase" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVWKInAppBrowser" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="Notification">
-        <param name="ios-package" value="CDVNotification" />
-    </feature>
-    <feature name="NativeStorage">
-        <param name="ios-package" value="NativeStorage" />
-    </feature>
-    <feature name="AppRate">
-        <param name="ios-package" value="CDVAppRate" />
-    </feature>
-    <feature name="Idfa">
-        <param name="ios-package" value="IdfaPlugin" />
-    </feature>
-    <feature name="AdMob">
-        <param name="ios-package" value="AMBPlugin" />
-    </feature>
+    <preference name="deployment-target" value="12.0" />
 </widget>

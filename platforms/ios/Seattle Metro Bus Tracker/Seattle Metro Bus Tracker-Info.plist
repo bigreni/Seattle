@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>2.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>2.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>
@@ -42,12 +42,43 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>WebAssembly</string>
+			<key>UTTypeIdentifier</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<string>wasm</string>
+				<key>public.mime-type</key>
+				<string>application/wasm</string>
+			</dict>
+		</dict>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIInterfaceOrientation</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>NSUserTrackingUsageDescription</key>
-	<string>This identifier will be used to deliver personalized ads to you.</string>
+	<string>Your data will be used to show you personalized ads.</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-9249695405712287~2234343761</string>
+	<key>GADDelayAppMeasurementInit</key>
+	<true/>
+	<key>GADIntegrationManager</key>
+	<string>webview</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
@@ -249,20 +280,5 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Need location access to find things nearby</string>
-	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-9249695405712287~2234343761</string>
-	<key>GADDelayAppMeasurementInit</key>
-	<true/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-		<key>NSAllowsArbitraryLoadsForMedia</key>
-		<true/>
-		<key>NSAllowsArbitraryLoadsInWebContent</key>
-		<true/>
-	</dict>
-	<key>GADIntegrationManager</key>
-	<string>webview</string>
 </dict>
 </plist>

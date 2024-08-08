@@ -1,8 +1,8 @@
 {
   "cordova": {
     "platforms": [
-      "ios",
-      "android"
+      "android",
+      "ios"
     ],
     "plugins": {
       "cordova-plugin-wkwebview-file-xhr": {},
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "cordova-android": "^13.0.0",
-    "cordova-ios": "^6.2.0",
+    "cordova-ios": "^7.1.1",
     "cordova-plugin-apprate": "^1.8.0",
     "cordova-plugin-device": "^3.0.0",
     "cordova-plugin-dialogs": "^2.0.2",
