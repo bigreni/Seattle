@@ -10,40 +10,45 @@
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		2394E7EFD01149749211D895 /* AMBContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801CDFD553854462800C9335 /* AMBContext.swift */; };
-		23EBA10CE46E44BAAD381F2D /* AMBAdBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307BCF661AD49CFB2C245DA /* AMBAdBase.swift */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		4315CA7E8CAA4330A4E5EC37 /* AMBBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1E04DB326420B88246ADC /* AMBBanner.swift */; };
-		4FB0B5FCAC5D444C9394BA37 /* AMBAppOpenAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423F71E82D3439F823F684A /* AMBAppOpenAd.swift */; };
 		5BDE9A1C944DEFBA33E40AE3 /* Pods_Seattle_Metro_Bus_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD85FF5004FA503559AD39A5 /* Pods_Seattle_Metro_Bus_Tracker.framework */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		7C18DBF0DCD048E5AFDF2CC5 /* AMBNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484C0B8368459E84E33444 /* AMBNativeAd.swift */; };
-		839DD0F120494A19B336341F /* AMBGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7580BDE9AD184125B4CB3F2C /* AMBGenerated.swift */; };
-		85E01576A5F646B7AE5A1094 /* AMBInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FE279EFFFB44D4987A5872 /* AMBInterstitial.swift */; };
 		B53AE1B5374A409C954B4FF6 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B191086696434FB2F06303 /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		BFBF5B2432DD4040863A0664 /* AMBPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF2BDE117B4F2ABCF334F0 /* AMBPlugin.swift */; };
-		ED8255657F994BD2B71518C1 /* AMBRewarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD77FDFDCDAB4581A6A769F5 /* AMBRewarded.swift */; };
-		F7F0E03DDACE4862B0E62B96 /* AMBRewardedInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80FB66B1C74429BA9EC4CD /* AMBRewardedInterstitial.swift */; };
-		FE7C2253182D49219469CDB7 /* AMBCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C20E81AC1E24ADDBE945660 /* AMBCore.swift */; };
-		0DF71A06366F4F8DAA028DB1 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBDE09CD24A47D0BEF3C987 /* CDVNotification.m */; };
-		A5D689473A744E939DE6ABF8 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9638913E9D847F4AE16B9E7 /* CDVNotification.bundle */; };
-		AA61F243AEDB4C899E6DF208 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDA2663BC3142AEB94EE8BD /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		CFBF0B264B2E48A0B0B5F4DC /* NativeStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB28D5654A9A4728B875F6B2 /* NativeStorage.m */; };
-		F792250B9C3B451293DFE8F9 /* CDVAppRate.m in Sources */ = {isa = PBXBuildFile; fileRef = F951D7C6AAF14659B44539F6 /* CDVAppRate.m */; };
 		9C49E0B3A56149B79F0405D5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED99AEE957646CFAB92513D /* StoreKit.framework */; };
-		E11EA333C87649C78823DC76 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 155AABD3DE554882A6A906EF /* CDVDevice.m */; };
-		B5028434327947AA8F093938 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C7B6C1EA74F48AC9B3F37 /* CDVLocation.m */; };
-		B71B4058782A4D6FBAC63F52 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C6437F6B8045869DBD9143 /* CoreLocation.framework */; };
-		6F87DDA5148B476793A3350B /* IdfaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A8776745844B4915C6A6C /* IdfaPlugin.m */; };
-		E01DFF9B2BCE49C6B9721BFD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE44E4E9A324DEE81CCA525 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		D200C73FF6114DB6B1FDD25B /* CDVInAppBrowserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 822EB1D495EE4E809829762E /* CDVInAppBrowserOptions.m */; };
-		A5D0F548FBAD41F9B9B196AE /* CDVInAppBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20A9757531E4DCA848BD496 /* CDVInAppBrowserNavigationController.m */; };
-		93AFDFE2160040479E4E6F69 /* CDVWKInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = AD24A99D78A74DB881AC3166 /* CDVWKInAppBrowser.m */; };
-		F4CD46C7D766402C823BC62A /* CDVWKInAppBrowserUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C1FF583106420798BDA3A6 /* CDVWKInAppBrowserUIDelegate.m */; };
-		3CF942E368384F80BADBF405 /* CDVWKWebViewFileXhr.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F5FF180A2C422EB47A4090 /* CDVWKWebViewFileXhr.m */; };
-		DE1927C941C74F8AA1906362 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C678F11BBD4914A1D7ABC8 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		842541F559F44D2AA3E98161 /* CDVWKWebViewFileXhr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE79CD915FB4AA7A52748C8 /* CDVWKWebViewFileXhr.m */; };
+		CFAC7E41003E413B8AC23505 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0318FAE7F3A40F288F94489 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		666685064284413AA1646258 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C975F2600604B87A268E215 /* CDVLocation.m */; };
+		9A2034702CD24491ACCD6D73 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610D6F684C254F8296B9FDF3 /* CoreLocation.framework */; };
+		9CD2F6BEA6BE431780447352 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C39D41A77D14FE8BB17D9D7 /* CDVDevice.m */; };
+		0507D46356224C20AE9DFCB0 /* CDVDevice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF3FEE0C6B3B47ED82EEBA0D /* CDVDevice.bundle */; };
+		F8CC6F7D8311418C9147F876 /* InAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B7BCD676784F92BF248212 /* InAppPurchase.m */; };
+		2BF42D6A08664F5EBA70A488 /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5851E7E15430789E9E1F6 /* SKProduct+LocalizedPrice.m */; };
+		46E6DD31DF8241D8A7FF2E1F /* SKProductDiscount+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D3EDE43BB4F8A981B225D /* SKProductDiscount+LocalizedPrice.m */; };
+		075447D703FF413FA7D48926 /* FileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FF898388BAAD467095D281B2 /* FileUtility.m */; };
+		0B3D1FB2F31F42A0AA966A5D /* CDVInAppBrowserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E38DCBFFBF81405A84BE5E2B /* CDVInAppBrowserOptions.m */; };
+		090B9E795379494B86ACB0C7 /* CDVInAppBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086BB0BC1D554515B2AFE2B4 /* CDVInAppBrowserNavigationController.m */; };
+		E01F5ED31FC940939C1C3411 /* CDVWKInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EFD954D73E45CC84AAECDE /* CDVWKInAppBrowser.m */; };
+		C04085D9476B497D8249EFEA /* CDVWKInAppBrowserUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8982C4B32F44CE6A799BDAF /* CDVWKInAppBrowserUIDelegate.m */; };
+		E2C45D75817B4AA8B9CD8061 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DD215282F75B4CF4A90219C4 /* CDVNotification.m */; };
+		F8546B14E5B14D62868D207C /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16BCE46A49AB474988FAA1ED /* CDVNotification.bundle */; };
+		BDDFF9DEA81241A7820F0960 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0929A927BF4623B791CC49 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E2DC25C402D14BE4B59A48E3 /* NativeStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE82E6ACAE940B197457418 /* NativeStorage.m */; };
+		6942C6DA331A4A8490B1492A /* CDVAppRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EDB64B1A754964A0A87DDF /* CDVAppRate.m */; };
+		3585DF8EA22D442197EF6C66 /* IdfaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB10325EE8427A8217129C /* IdfaPlugin.m */; };
+		3652EAFBD51F4A7FB00E7FB8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF5D5C8412F42C0BDEBEFCD /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		352A20B7159B4444B73FC351 /* AMBAdBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2850E4067D4FF3BC11C98C /* AMBAdBase.swift */; };
+		7F7A149E89644818AA000E2B /* AMBAppOpenAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACB89B8A5E494DA21B94D3 /* AMBAppOpenAd.swift */; };
+		C69E4535B59946BD97A90E6C /* AMBBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB022569E7834FA5B9638F5D /* AMBBanner.swift */; };
+		7DEB728B8C394A25A8CE56A9 /* AMBContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC449F6D63480AACE046D4 /* AMBContext.swift */; };
+		B6DD3EF15AEF435D92CC1956 /* AMBCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D57522E514EC5A75B5105 /* AMBCore.swift */; };
+		71C27377DA454F09821519B7 /* AMBGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A570E86D7404076B65A4E89 /* AMBGenerated.swift */; };
+		2E6052CCA0594FD6B7A378EC /* AMBInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64047CD6B3646ED9E777921 /* AMBInterstitial.swift */; };
+		996C30383FCE49FA88BCF6C3 /* AMBNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A47177BF2944751B66F6509 /* AMBNativeAd.swift */; };
+		B2A0B8BDCB9A4F178EAE4438 /* AMBPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA80695CC64A96ABA327F1 /* AMBPlugin.swift */; };
+		5C294437DF914556BEA74FAE /* AMBRewarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E966AE4D29AB43758D45746E /* AMBRewarded.swift */; };
+		B12E824D28FA40E18C91DF6C /* AMBRewardedInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5498C0F82F43AC89DC7B8C /* AMBRewardedInterstitial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,12 +79,9 @@
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Seattle Metro Bus Tracker/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		03A3B4C29F8FDC8DDB0F84F2 /* Pods-Seattle Metro Bus Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seattle Metro Bus Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Seattle Metro Bus Tracker/Pods-Seattle Metro Bus Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		0724E59260A00F34B9FB54DA /* Pods-Seattle Metro Bus Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seattle Metro Bus Tracker.release.xcconfig"; path = "Target Support Files/Pods-Seattle Metro Bus Tracker/Pods-Seattle Metro Bus Tracker.release.xcconfig"; sourceTree = "<group>"; };
-		10FE279EFFFB44D4987A5872 /* AMBInterstitial.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBInterstitial.swift; path = "admob-plus-cordova/AMBInterstitial.swift"; sourceTree = "<group>"; };
-		1C20E81AC1E24ADDBE945660 /* AMBCore.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBCore.swift; path = "admob-plus-cordova/AMBCore.swift"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Seattle Metro Bus Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seattle Metro Bus Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2307BCF661AD49CFB2C245DA /* AMBAdBase.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBAdBase.swift; path = "admob-plus-cordova/AMBAdBase.swift"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
@@ -90,50 +92,62 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* Seattle Metro Bus Tracker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Seattle Metro Bus Tracker-Prefix.pch"; sourceTree = "<group>"; };
-		4423F71E82D3439F823F684A /* AMBAppOpenAd.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBAppOpenAd.swift; path = "admob-plus-cordova/AMBAppOpenAd.swift"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "Seattle Metro Bus Tracker/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
-		7580BDE9AD184125B4CB3F2C /* AMBGenerated.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBGenerated.swift; path = "admob-plus-cordova/AMBGenerated.swift"; sourceTree = "<group>"; };
-		7CFF2BDE117B4F2ABCF334F0 /* AMBPlugin.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBPlugin.swift; path = "admob-plus-cordova/AMBPlugin.swift"; sourceTree = "<group>"; };
-		801CDFD553854462800C9335 /* AMBContext.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBContext.swift; path = "admob-plus-cordova/AMBContext.swift"; sourceTree = "<group>"; };
 		82B191086696434FB2F06303 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Seattle Metro Bus Tracker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Seattle Metro Bus Tracker-Info.plist"; path = "Seattle Metro Bus Tracker/Seattle Metro Bus Tracker-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		98484C0B8368459E84E33444 /* AMBNativeAd.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBNativeAd.swift; path = "admob-plus-cordova/AMBNativeAd.swift"; sourceTree = "<group>"; };
-		BD77FDFDCDAB4581A6A769F5 /* AMBRewarded.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBRewarded.swift; path = "admob-plus-cordova/AMBRewarded.swift"; sourceTree = "<group>"; };
 		BD85FF5004FA503559AD39A5 /* Pods_Seattle_Metro_Bus_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seattle_Metro_Bus_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD80FB66B1C74429BA9EC4CD /* AMBRewardedInterstitial.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBRewardedInterstitial.swift; path = "admob-plus-cordova/AMBRewardedInterstitial.swift"; sourceTree = "<group>"; };
-		DBC1E04DB326420B88246ADC /* AMBBanner.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBBanner.swift; path = "admob-plus-cordova/AMBBanner.swift"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Seattle Metro Bus Tracker/config.xml"; sourceTree = "<group>"; };
-		0EBDE09CD24A47D0BEF3C987 /* CDVNotification.m */ = {isa = PBXFileReference; name = "CDVNotification.m"; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		DCF0CF81F8724142AC2F0BAD /* CDVNotification.h */ = {isa = PBXFileReference; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		B9638913E9D847F4AE16B9E7 /* CDVNotification.bundle */ = {isa = PBXFileReference; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
-		5CDA2663BC3142AEB94EE8BD /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		CB28D5654A9A4728B875F6B2 /* NativeStorage.m */ = {isa = PBXFileReference; name = "NativeStorage.m"; path = "cordova-plugin-nativestorage/NativeStorage.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		DA97B73B44B4464F8306CB76 /* NativeStorage.h */ = {isa = PBXFileReference; name = "NativeStorage.h"; path = "cordova-plugin-nativestorage/NativeStorage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		F951D7C6AAF14659B44539F6 /* CDVAppRate.m */ = {isa = PBXFileReference; name = "CDVAppRate.m"; path = "cordova-plugin-apprate/CDVAppRate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		D8AD5FB45E16427596E95208 /* CDVAppRate.h */ = {isa = PBXFileReference; name = "CDVAppRate.h"; path = "cordova-plugin-apprate/CDVAppRate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		2ED99AEE957646CFAB92513D /* StoreKit.framework */ = {isa = PBXFileReference; name = "StoreKit.framework"; path = "System/Library/Frameworks/StoreKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		155AABD3DE554882A6A906EF /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		361A557C7B974215B9136FDB /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		4A3C7B6C1EA74F48AC9B3F37 /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		AB9D7E4492504BAB8B3E3199 /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		07C6437F6B8045869DBD9143 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		5C2A8776745844B4915C6A6C /* IdfaPlugin.m */ = {isa = PBXFileReference; name = "IdfaPlugin.m"; path = "cordova-plugin-idfa/IdfaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		EF9757DF39F94D399EEA2804 /* IdfaPlugin.h */ = {isa = PBXFileReference; name = "IdfaPlugin.h"; path = "cordova-plugin-idfa/IdfaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		CBE44E4E9A324DEE81CCA525 /* AdSupport.framework */ = {isa = PBXFileReference; name = "AdSupport.framework"; path = "System/Library/Frameworks/AdSupport.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		822EB1D495EE4E809829762E /* CDVInAppBrowserOptions.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		E20A9757531E4DCA848BD496 /* CDVInAppBrowserNavigationController.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		AD24A99D78A74DB881AC3166 /* CDVWKInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		95C1FF583106420798BDA3A6 /* CDVWKInAppBrowserUIDelegate.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		77FF7B27FA854A8AA43B3EED /* CDVInAppBrowserOptions.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		7DA9FA650A1F473EA38369CB /* CDVInAppBrowserNavigationController.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		238DDFF52CF148DC94E12689 /* CDVWKInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		A71A2977E9A248FB9801F498 /* CDVWKInAppBrowserUIDelegate.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		D7F5FF180A2C422EB47A4090 /* CDVWKWebViewFileXhr.m */ = {isa = PBXFileReference; name = "CDVWKWebViewFileXhr.m"; path = "cordova-plugin-wkwebview-file-xhr/CDVWKWebViewFileXhr.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		604BCC9BD5724519A8F16EF1 /* CDVWKWebViewFileXhr.h */ = {isa = PBXFileReference; name = "CDVWKWebViewFileXhr.h"; path = "cordova-plugin-wkwebview-file-xhr/CDVWKWebViewFileXhr.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		49C678F11BBD4914A1D7ABC8 /* WebKit.framework */ = {isa = PBXFileReference; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4DE79CD915FB4AA7A52748C8 /* CDVWKWebViewFileXhr.m */ = {isa = PBXFileReference; name = "CDVWKWebViewFileXhr.m"; path = "cordova-plugin-wkwebview-file-xhr/CDVWKWebViewFileXhr.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		DAE9528043E149E5BBDF2836 /* CDVWKWebViewFileXhr.h */ = {isa = PBXFileReference; name = "CDVWKWebViewFileXhr.h"; path = "cordova-plugin-wkwebview-file-xhr/CDVWKWebViewFileXhr.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A0318FAE7F3A40F288F94489 /* WebKit.framework */ = {isa = PBXFileReference; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8C975F2600604B87A268E215 /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A966B5A4048146CDBC753818 /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		610D6F684C254F8296B9FDF3 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8C39D41A77D14FE8BB17D9D7 /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9E537C82403A40AE944A6B03 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FF3FEE0C6B3B47ED82EEBA0D /* CDVDevice.bundle */ = {isa = PBXFileReference; name = "CDVDevice.bundle"; path = "CDVDevice.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		75B7BCD676784F92BF248212 /* InAppPurchase.m */ = {isa = PBXFileReference; name = "InAppPurchase.m"; path = "cordova-plugin-purchase/InAppPurchase.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3FD5851E7E15430789E9E1F6 /* SKProduct+LocalizedPrice.m */ = {isa = PBXFileReference; name = "SKProduct+LocalizedPrice.m"; path = "cordova-plugin-purchase/SKProduct+LocalizedPrice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3F4D3EDE43BB4F8A981B225D /* SKProductDiscount+LocalizedPrice.m */ = {isa = PBXFileReference; name = "SKProductDiscount+LocalizedPrice.m"; path = "cordova-plugin-purchase/SKProductDiscount+LocalizedPrice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		FF898388BAAD467095D281B2 /* FileUtility.m */ = {isa = PBXFileReference; name = "FileUtility.m"; path = "cordova-plugin-purchase/FileUtility.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C2AF8D3F09CA49E9B0DABC35 /* InAppPurchase.h */ = {isa = PBXFileReference; name = "InAppPurchase.h"; path = "cordova-plugin-purchase/InAppPurchase.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BC3A68FFD1D24F22873E15FF /* SKProduct+LocalizedPrice.h */ = {isa = PBXFileReference; name = "SKProduct+LocalizedPrice.h"; path = "cordova-plugin-purchase/SKProduct+LocalizedPrice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9BC4D567B3B341C8B410F6A3 /* SKProductDiscount+LocalizedPrice.h */ = {isa = PBXFileReference; name = "SKProductDiscount+LocalizedPrice.h"; path = "cordova-plugin-purchase/SKProductDiscount+LocalizedPrice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F8511DF8A48C423F97C8B843 /* FileUtility.h */ = {isa = PBXFileReference; name = "FileUtility.h"; path = "cordova-plugin-purchase/FileUtility.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E38DCBFFBF81405A84BE5E2B /* CDVInAppBrowserOptions.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		086BB0BC1D554515B2AFE2B4 /* CDVInAppBrowserNavigationController.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		90EFD954D73E45CC84AAECDE /* CDVWKInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D8982C4B32F44CE6A799BDAF /* CDVWKInAppBrowserUIDelegate.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E2F2639ACAE54D55BA510905 /* CDVInAppBrowserOptions.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3E76C663F7DF4F72837FF225 /* CDVInAppBrowserNavigationController.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		00371F18E550471388A3097A /* CDVWKInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		629A3A38EA314AC093DCBB7E /* CDVWKInAppBrowserUIDelegate.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DD215282F75B4CF4A90219C4 /* CDVNotification.m */ = {isa = PBXFileReference; name = "CDVNotification.m"; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		34461A27C10E45329098612E /* CDVNotification.h */ = {isa = PBXFileReference; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		16BCE46A49AB474988FAA1ED /* CDVNotification.bundle */ = {isa = PBXFileReference; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		AF0929A927BF4623B791CC49 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		9CE82E6ACAE940B197457418 /* NativeStorage.m */ = {isa = PBXFileReference; name = "NativeStorage.m"; path = "cordova-plugin-nativestorage/NativeStorage.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B6AC2EED6984476EA70F7725 /* NativeStorage.h */ = {isa = PBXFileReference; name = "NativeStorage.h"; path = "cordova-plugin-nativestorage/NativeStorage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		15EDB64B1A754964A0A87DDF /* CDVAppRate.m */ = {isa = PBXFileReference; name = "CDVAppRate.m"; path = "cordova-plugin-apprate/CDVAppRate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		AAC40DFC78D749BC948C3BE5 /* CDVAppRate.h */ = {isa = PBXFileReference; name = "CDVAppRate.h"; path = "cordova-plugin-apprate/CDVAppRate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CBCB10325EE8427A8217129C /* IdfaPlugin.m */ = {isa = PBXFileReference; name = "IdfaPlugin.m"; path = "cordova-plugin-idfa/IdfaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		23B42A0D8C6D481A994B6632 /* IdfaPlugin.h */ = {isa = PBXFileReference; name = "IdfaPlugin.h"; path = "cordova-plugin-idfa/IdfaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FCF5D5C8412F42C0BDEBEFCD /* AdSupport.framework */ = {isa = PBXFileReference; name = "AdSupport.framework"; path = "System/Library/Frameworks/AdSupport.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		FD2850E4067D4FF3BC11C98C /* AMBAdBase.swift */ = {isa = PBXFileReference; name = "AMBAdBase.swift"; path = "admob-plus-cordova/AMBAdBase.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		50ACB89B8A5E494DA21B94D3 /* AMBAppOpenAd.swift */ = {isa = PBXFileReference; name = "AMBAppOpenAd.swift"; path = "admob-plus-cordova/AMBAppOpenAd.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		EB022569E7834FA5B9638F5D /* AMBBanner.swift */ = {isa = PBXFileReference; name = "AMBBanner.swift"; path = "admob-plus-cordova/AMBBanner.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		21DC449F6D63480AACE046D4 /* AMBContext.swift */ = {isa = PBXFileReference; name = "AMBContext.swift"; path = "admob-plus-cordova/AMBContext.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		886D57522E514EC5A75B5105 /* AMBCore.swift */ = {isa = PBXFileReference; name = "AMBCore.swift"; path = "admob-plus-cordova/AMBCore.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		8A570E86D7404076B65A4E89 /* AMBGenerated.swift */ = {isa = PBXFileReference; name = "AMBGenerated.swift"; path = "admob-plus-cordova/AMBGenerated.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		F64047CD6B3646ED9E777921 /* AMBInterstitial.swift */ = {isa = PBXFileReference; name = "AMBInterstitial.swift"; path = "admob-plus-cordova/AMBInterstitial.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		6A47177BF2944751B66F6509 /* AMBNativeAd.swift */ = {isa = PBXFileReference; name = "AMBNativeAd.swift"; path = "admob-plus-cordova/AMBNativeAd.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		4ACA80695CC64A96ABA327F1 /* AMBPlugin.swift */ = {isa = PBXFileReference; name = "AMBPlugin.swift"; path = "admob-plus-cordova/AMBPlugin.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		E966AE4D29AB43758D45746E /* AMBRewarded.swift */ = {isa = PBXFileReference; name = "AMBRewarded.swift"; path = "admob-plus-cordova/AMBRewarded.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		3A5498C0F82F43AC89DC7B8C /* AMBRewardedInterstitial.swift */ = {isa = PBXFileReference; name = "AMBRewardedInterstitial.swift"; path = "admob-plus-cordova/AMBRewardedInterstitial.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,11 +158,11 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				B53AE1B5374A409C954B4FF6 /* AppTrackingTransparency.framework in Frameworks */,
 				5BDE9A1C944DEFBA33E40AE3 /* Pods_Seattle_Metro_Bus_Tracker.framework in Frameworks */,
-				AA61F243AEDB4C899E6DF208 /* AudioToolbox.framework in Frameworks */,
 				9C49E0B3A56149B79F0405D5 /* StoreKit.framework in Frameworks */,
-				B71B4058782A4D6FBAC63F52 /* CoreLocation.framework in Frameworks */,
-				E01DFF9B2BCE49C6B9721BFD /* AdSupport.framework in Frameworks */,
-				DE1927C941C74F8AA1906362 /* WebKit.framework in Frameworks */,
+				CFAC7E41003E413B8AC23505 /* WebKit.framework in Frameworks */,
+				9A2034702CD24491ACCD6D73 /* CoreLocation.framework in Frameworks */,
+				BDDFF9DEA81241A7820F0960 /* AudioToolbox.framework in Frameworks */,
+				3652EAFBD51F4A7FB00E7FB8 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +226,8 @@
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* Seattle Metro Bus Tracker-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
-				B9638913E9D847F4AE16B9E7 /* CDVNotification.bundle */,
+				FF3FEE0C6B3B47ED82EEBA0D /* CDVDevice.bundle */,
+				16BCE46A49AB474988FAA1ED /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "Seattle Metro Bus Tracker/Resources";
@@ -223,11 +238,11 @@
 			children = (
 				82B191086696434FB2F06303 /* AppTrackingTransparency.framework */,
 				BD85FF5004FA503559AD39A5 /* Pods_Seattle_Metro_Bus_Tracker.framework */,
-				5CDA2663BC3142AEB94EE8BD /* AudioToolbox.framework */,
 				2ED99AEE957646CFAB92513D /* StoreKit.framework */,
-				07C6437F6B8045869DBD9143 /* CoreLocation.framework */,
-				CBE44E4E9A324DEE81CCA525 /* AdSupport.framework */,
-				49C678F11BBD4914A1D7ABC8 /* WebKit.framework */,
+				A0318FAE7F3A40F288F94489 /* WebKit.framework */,
+				610D6F684C254F8296B9FDF3 /* CoreLocation.framework */,
+				AF0929A927BF4623B791CC49 /* AudioToolbox.framework */,
+				FCF5D5C8412F42C0BDEBEFCD /* AdSupport.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -254,39 +269,47 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				2307BCF661AD49CFB2C245DA /* AMBAdBase.swift */,
-				4423F71E82D3439F823F684A /* AMBAppOpenAd.swift */,
-				DBC1E04DB326420B88246ADC /* AMBBanner.swift */,
-				801CDFD553854462800C9335 /* AMBContext.swift */,
-				1C20E81AC1E24ADDBE945660 /* AMBCore.swift */,
-				7580BDE9AD184125B4CB3F2C /* AMBGenerated.swift */,
-				10FE279EFFFB44D4987A5872 /* AMBInterstitial.swift */,
-				98484C0B8368459E84E33444 /* AMBNativeAd.swift */,
-				7CFF2BDE117B4F2ABCF334F0 /* AMBPlugin.swift */,
-				BD77FDFDCDAB4581A6A769F5 /* AMBRewarded.swift */,
-				CD80FB66B1C74429BA9EC4CD /* AMBRewardedInterstitial.swift */,
-				0EBDE09CD24A47D0BEF3C987 /* CDVNotification.m */,
-				DCF0CF81F8724142AC2F0BAD /* CDVNotification.h */,
-				CB28D5654A9A4728B875F6B2 /* NativeStorage.m */,
-				DA97B73B44B4464F8306CB76 /* NativeStorage.h */,
-				F951D7C6AAF14659B44539F6 /* CDVAppRate.m */,
-				D8AD5FB45E16427596E95208 /* CDVAppRate.h */,
-				155AABD3DE554882A6A906EF /* CDVDevice.m */,
-				361A557C7B974215B9136FDB /* CDVDevice.h */,
-				4A3C7B6C1EA74F48AC9B3F37 /* CDVLocation.m */,
-				AB9D7E4492504BAB8B3E3199 /* CDVLocation.h */,
-				5C2A8776745844B4915C6A6C /* IdfaPlugin.m */,
-				EF9757DF39F94D399EEA2804 /* IdfaPlugin.h */,
-				822EB1D495EE4E809829762E /* CDVInAppBrowserOptions.m */,
-				E20A9757531E4DCA848BD496 /* CDVInAppBrowserNavigationController.m */,
-				AD24A99D78A74DB881AC3166 /* CDVWKInAppBrowser.m */,
-				95C1FF583106420798BDA3A6 /* CDVWKInAppBrowserUIDelegate.m */,
-				77FF7B27FA854A8AA43B3EED /* CDVInAppBrowserOptions.h */,
-				7DA9FA650A1F473EA38369CB /* CDVInAppBrowserNavigationController.h */,
-				238DDFF52CF148DC94E12689 /* CDVWKInAppBrowser.h */,
-				A71A2977E9A248FB9801F498 /* CDVWKInAppBrowserUIDelegate.h */,
-				D7F5FF180A2C422EB47A4090 /* CDVWKWebViewFileXhr.m */,
-				604BCC9BD5724519A8F16EF1 /* CDVWKWebViewFileXhr.h */,
+				4DE79CD915FB4AA7A52748C8 /* CDVWKWebViewFileXhr.m */,
+				DAE9528043E149E5BBDF2836 /* CDVWKWebViewFileXhr.h */,
+				8C975F2600604B87A268E215 /* CDVLocation.m */,
+				A966B5A4048146CDBC753818 /* CDVLocation.h */,
+				8C39D41A77D14FE8BB17D9D7 /* CDVDevice.m */,
+				9E537C82403A40AE944A6B03 /* CDVDevice.h */,
+				75B7BCD676784F92BF248212 /* InAppPurchase.m */,
+				3FD5851E7E15430789E9E1F6 /* SKProduct+LocalizedPrice.m */,
+				3F4D3EDE43BB4F8A981B225D /* SKProductDiscount+LocalizedPrice.m */,
+				FF898388BAAD467095D281B2 /* FileUtility.m */,
+				C2AF8D3F09CA49E9B0DABC35 /* InAppPurchase.h */,
+				BC3A68FFD1D24F22873E15FF /* SKProduct+LocalizedPrice.h */,
+				9BC4D567B3B341C8B410F6A3 /* SKProductDiscount+LocalizedPrice.h */,
+				F8511DF8A48C423F97C8B843 /* FileUtility.h */,
+				E38DCBFFBF81405A84BE5E2B /* CDVInAppBrowserOptions.m */,
+				086BB0BC1D554515B2AFE2B4 /* CDVInAppBrowserNavigationController.m */,
+				90EFD954D73E45CC84AAECDE /* CDVWKInAppBrowser.m */,
+				D8982C4B32F44CE6A799BDAF /* CDVWKInAppBrowserUIDelegate.m */,
+				E2F2639ACAE54D55BA510905 /* CDVInAppBrowserOptions.h */,
+				3E76C663F7DF4F72837FF225 /* CDVInAppBrowserNavigationController.h */,
+				00371F18E550471388A3097A /* CDVWKInAppBrowser.h */,
+				629A3A38EA314AC093DCBB7E /* CDVWKInAppBrowserUIDelegate.h */,
+				DD215282F75B4CF4A90219C4 /* CDVNotification.m */,
+				34461A27C10E45329098612E /* CDVNotification.h */,
+				9CE82E6ACAE940B197457418 /* NativeStorage.m */,
+				B6AC2EED6984476EA70F7725 /* NativeStorage.h */,
+				15EDB64B1A754964A0A87DDF /* CDVAppRate.m */,
+				AAC40DFC78D749BC948C3BE5 /* CDVAppRate.h */,
+				CBCB10325EE8427A8217129C /* IdfaPlugin.m */,
+				23B42A0D8C6D481A994B6632 /* IdfaPlugin.h */,
+				FD2850E4067D4FF3BC11C98C /* AMBAdBase.swift */,
+				50ACB89B8A5E494DA21B94D3 /* AMBAppOpenAd.swift */,
+				EB022569E7834FA5B9638F5D /* AMBBanner.swift */,
+				21DC449F6D63480AACE046D4 /* AMBContext.swift */,
+				886D57522E514EC5A75B5105 /* AMBCore.swift */,
+				8A570E86D7404076B65A4E89 /* AMBGenerated.swift */,
+				F64047CD6B3646ED9E777921 /* AMBInterstitial.swift */,
+				6A47177BF2944751B66F6509 /* AMBNativeAd.swift */,
+				4ACA80695CC64A96ABA327F1 /* AMBPlugin.swift */,
+				E966AE4D29AB43758D45746E /* AMBRewarded.swift */,
+				3A5498C0F82F43AC89DC7B8C /* AMBRewardedInterstitial.swift */,
 			);
 			name = Plugins;
 			path = "Seattle Metro Bus Tracker/Plugins";
@@ -397,7 +420,8 @@
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
-				A5D689473A744E939DE6ABF8 /* CDVNotification.bundle in Resources */,
+				0507D46356224C20AE9DFCB0 /* CDVDevice.bundle in Resources */,
+				F8546B14E5B14D62868D207C /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,28 +492,32 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				23EBA10CE46E44BAAD381F2D /* AMBAdBase.swift in Sources */,
-				4FB0B5FCAC5D444C9394BA37 /* AMBAppOpenAd.swift in Sources */,
-				4315CA7E8CAA4330A4E5EC37 /* AMBBanner.swift in Sources */,
-				2394E7EFD01149749211D895 /* AMBContext.swift in Sources */,
-				FE7C2253182D49219469CDB7 /* AMBCore.swift in Sources */,
-				839DD0F120494A19B336341F /* AMBGenerated.swift in Sources */,
-				85E01576A5F646B7AE5A1094 /* AMBInterstitial.swift in Sources */,
-				7C18DBF0DCD048E5AFDF2CC5 /* AMBNativeAd.swift in Sources */,
-				BFBF5B2432DD4040863A0664 /* AMBPlugin.swift in Sources */,
-				ED8255657F994BD2B71518C1 /* AMBRewarded.swift in Sources */,
-				F7F0E03DDACE4862B0E62B96 /* AMBRewardedInterstitial.swift in Sources */,
-				0DF71A06366F4F8DAA028DB1 /* CDVNotification.m in Sources */,
-				CFBF0B264B2E48A0B0B5F4DC /* NativeStorage.m in Sources */,
-				F792250B9C3B451293DFE8F9 /* CDVAppRate.m in Sources */,
-				E11EA333C87649C78823DC76 /* CDVDevice.m in Sources */,
-				B5028434327947AA8F093938 /* CDVLocation.m in Sources */,
-				6F87DDA5148B476793A3350B /* IdfaPlugin.m in Sources */,
-				D200C73FF6114DB6B1FDD25B /* CDVInAppBrowserOptions.m in Sources */,
-				A5D0F548FBAD41F9B9B196AE /* CDVInAppBrowserNavigationController.m in Sources */,
-				93AFDFE2160040479E4E6F69 /* CDVWKInAppBrowser.m in Sources */,
-				F4CD46C7D766402C823BC62A /* CDVWKInAppBrowserUIDelegate.m in Sources */,
-				3CF942E368384F80BADBF405 /* CDVWKWebViewFileXhr.m in Sources */,
+				842541F559F44D2AA3E98161 /* CDVWKWebViewFileXhr.m in Sources */,
+				666685064284413AA1646258 /* CDVLocation.m in Sources */,
+				9CD2F6BEA6BE431780447352 /* CDVDevice.m in Sources */,
+				F8CC6F7D8311418C9147F876 /* InAppPurchase.m in Sources */,
+				2BF42D6A08664F5EBA70A488 /* SKProduct+LocalizedPrice.m in Sources */,
+				46E6DD31DF8241D8A7FF2E1F /* SKProductDiscount+LocalizedPrice.m in Sources */,
+				075447D703FF413FA7D48926 /* FileUtility.m in Sources */,
+				0B3D1FB2F31F42A0AA966A5D /* CDVInAppBrowserOptions.m in Sources */,
+				090B9E795379494B86ACB0C7 /* CDVInAppBrowserNavigationController.m in Sources */,
+				E01F5ED31FC940939C1C3411 /* CDVWKInAppBrowser.m in Sources */,
+				C04085D9476B497D8249EFEA /* CDVWKInAppBrowserUIDelegate.m in Sources */,
+				E2C45D75817B4AA8B9CD8061 /* CDVNotification.m in Sources */,
+				E2DC25C402D14BE4B59A48E3 /* NativeStorage.m in Sources */,
+				6942C6DA331A4A8490B1492A /* CDVAppRate.m in Sources */,
+				3585DF8EA22D442197EF6C66 /* IdfaPlugin.m in Sources */,
+				352A20B7159B4444B73FC351 /* AMBAdBase.swift in Sources */,
+				7F7A149E89644818AA000E2B /* AMBAppOpenAd.swift in Sources */,
+				C69E4535B59946BD97A90E6C /* AMBBanner.swift in Sources */,
+				7DEB728B8C394A25A8CE56A9 /* AMBContext.swift in Sources */,
+				B6DD3EF15AEF435D92CC1956 /* AMBCore.swift in Sources */,
+				71C27377DA454F09821519B7 /* AMBGenerated.swift in Sources */,
+				2E6052CCA0594FD6B7A378EC /* AMBInterstitial.swift in Sources */,
+				996C30383FCE49FA88BCF6C3 /* AMBNativeAd.swift in Sources */,
+				B2A0B8BDCB9A4F178EAE4438 /* AMBPlugin.swift in Sources */,
+				5C294437DF914556BEA74FAE /* AMBRewarded.swift in Sources */,
+				B12E824D28FA40E18C91DF6C /* AMBRewardedInterstitial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

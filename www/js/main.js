@@ -14,7 +14,7 @@
       banner: 'ca-app-pub-1683858134373419/7790106682', // or DFP format "/6253334/dfp_example_ad"
       interstitial: 'ca-app-pub-9249695405712287/8883651449'
     };
-  } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) { // for ios
+  } else if ((/(ipad|iphone|ipod)/i.test(navigator.userAgent)) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) { // for ios
     admobid = {
       banner: 'ca-app-pub-1683858134373419/7790106682', // or DFP format "/6253334/dfp_example_ad"
       interstitial: 'ca-app-pub-9249695405712287/8716130486'
@@ -62,7 +62,8 @@
         if ((/(android|windows phone)/i.test(navigator.userAgent))) {
             AdMob.prepareInterstitial({ adId: admobid.interstitial, isTesting: true, autoShow: false });
             //document.getElementById("screen").style.display = 'none';     
-        } else if ((/(ipad|iphone|ipod)/i.test(navigator.userAgent))) {
+        } 
+        else if ((/(ipad|iphone|ipod)/i.test(navigator.userAgent)) || (navigator.userAgent.includes("Mac") && "ontouchend" in document))  {
             AdMob.prepareInterstitial({ adId: admobid.interstitial, isTesting: true, autoShow: false });
             //document.getElementById("screen").style.display = 'none';     
         } else
@@ -78,6 +79,7 @@
         $(".dropList").select2();
         //checkConsent();
         initApp1();
+        checkAdStatus();
         checkPermissions();
         //document.getElementById('screen').style.display = 'none';     
         askRating();
@@ -89,13 +91,38 @@
         //loadRoutes();
         $("span").remove();
         $(".dropList").select2();
+        checkAdStatus();
         document.getElementById("screen").style.display = 'none';     
+    }
+
+    function checkAdStatus()
+    {
+        var showad = localStorage.getItem("numUses");
+        if (showad == null)
+        {
+            var favStop = localStorage.getItem("Favorites");
+            if (favStop != null)
+            {
+                localStorage.setItem("numUses", "10");
+            }
+            else
+            {
+                localStorage.setItem("numUses", "1");
+            }
+        }
+        else if(parseInt(showad) < 10)
+        {
+            showad = parseInt(showad) + 1;
+            localStorage.setItem("numUses", showad);
+        }    
     }
 
 function loadFaves()
 {
     //showAd();
-    showAd1();
+    var adshow = localStorage.getItem("numUses");
+    if(parseInt(adshow) >= 10)
+        showAd1();
     window.location = "Favorites.html";
 }
 
@@ -168,7 +195,7 @@ AppRate.promptForRating(false);
 function showAd()
 {
     document.getElementById("screen").style.display = 'block';     
-    if ((/(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent))) {
+    if ((/(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent)) || (navigator.userAgent.includes("Mac") && "ontouchend" in document))  {
         AdMob.isInterstitialReady(function(isready){
             if(isready) 
                 AdMob.showInterstitial();
@@ -276,7 +303,10 @@ function loadArrivals() {
 // var allRoutes = document.getElementById('allRoutes');
 var outputContainer = $('.js-next-bus-results');
     var results = "";
-    showAd1();
+    var adshow = localStorage.getItem("numUses");
+    if(parseInt(adshow) >= 10)
+        showAd1();
+    
     $.ajax(
           {
               type: "GET",
