@@ -1,8 +1,8 @@
 {
   "cordova": {
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "plugins": {
       "cordova-plugin-wkwebview-file-xhr": {},
@@ -10,7 +10,6 @@
         "GPS_REQUIRED": "true"
       },
       "cordova-plugin-device": {},
-      "cordova-plugin-purchase": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-apprate": {
         "PLAY_REVIEW_VERSION": "2.+"
@@ -24,11 +23,12 @@
         "PLAY_SERVICES_VERSION": "23.0.0",
         "USAGE": "This identifier will be used to deliver personalized ads to you.",
         "DISABLESDKCRASHREPORTING": "false"
-      }
+      },
+      "cordova-plugin-purchase": {}
     }
   },
   "devDependencies": {
-    "cordova-android": "^13.0.0",
+    "cordova-android": "^14.0.1",
     "cordova-ios": "^7.1.1",
     "cordova-plugin-apprate": "^1.8.0",
     "cordova-plugin-device": "^3.0.0",
@@ -37,7 +37,7 @@
     "cordova-plugin-idfa": "^3.0.0",
     "cordova-plugin-inappbrowser": "^6.0.0",
     "cordova-plugin-nativestorage": "^2.3.2",
-    "cordova-plugin-purchase": "^13.11.1",
+    "cordova-plugin-purchase": "^13.12.1",
     "cordova-plugin-wkwebview-file-xhr": "^3.1.1",
     "cordova-support-android-plugin": "~2.0.4"
   },
