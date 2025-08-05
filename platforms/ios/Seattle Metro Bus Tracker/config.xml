@@ -82,7 +82,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <icon src="icon.png" />
-    <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+    <edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysAndWhenInUseUsageDescription">
         <string>Need location access to find things nearby</string>
     </edit-config>
     <edit-config file="*-Info.plist" mode="merge" target="NSUserTrackingUsageDescription">

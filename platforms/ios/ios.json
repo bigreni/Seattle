@@ -7,7 +7,7 @@
     "files": {
       "*-Info.plist": {
         "parents": {
-          "NSLocationWhenInUseUsageDescription": [
+          "NSLocationAlwaysAndWhenInUseUsageDescription": [
             {
               "xml": "<string>Need location access to find things nearby</string>",
               "count": 1,
